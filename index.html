@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A contrast slider allowing users to adjust background and text color while maintaining WCAG accessibility standards.">
+    <title>Contrast Slider</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" type="module"></script>
+</head>
+
+<body class="flow">
+    <div id="loader" class="loader"><span class="visually-hidden">The page is loading...</span></div>
+    <span class="visually-hidden" aria-hidden="true" id="page-loaded"></span>
+    <a href="#main-content" class="element-invisible element-focusable skip-link">Skip to main content</a>
+
+    <header class="header">
+        <p class="h1"><span>Contrast Slider</span></p>
+    </header>
+
+    <main class="main" id="main-content">
+
+        <div class="container flow">
+            <h1 class="visually-hidden">Change Contrast</h1>
+
+            <form class="flow">
+                <label for="range">Contrast</label>
+                <input id="range" type="range" min="1" max="6" value="1" step="1" aria-describedby="output">
+            </form>
+
+            <div class="output flow" id="output" aria-live="polite">
+                <div class="centerer">
+                    <h2>Current Style:</h2>
+                    <p>
+                        <span class="visually-hidden"><abbr title="Cascading Style Sheets">CSS</abbr> code:</span>
+                        <code id="val">background-color: #fff; color: black;</code>
+                    </p>
+                </div>
+
+                <div class="centerer">
+                    <h2><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Background / Foreground Contrast
+                    </h2>
+                    <dl class="wcag" id="wcag">
+                        <dt>Ratio</dt>
+                        <dd id="ratio">21</dd>
+                        <dt>AA</dt>
+                        <dd id="aa">pass</dd>
+                        <dt>AA Large</dt>
+                        <dd id="aa-large">pass</dd>
+                        <dt>AAA</dt>
+                        <dd id="aaa">pass</dd>
+                        <dt>AAA Large</dt>
+                        <dd id="aaa-large">pass</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="centerer">
+                <h2>Sample Text</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nemo totam est! Amet, perferendis
+                    voluptate
+                    in labore iure placeat pariatur nulla adipisci explicabo ab est incidunt cumque distinctio aliquam
+                    cum.
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <a href="https://github.com/chrisnajman/contrast-slider" target="_blank" rel="noopener noreferrer"
+            class="external-link">
+            GitHub Repository
+        </a>
+    </footer>
+
+</body>
+
+</html>

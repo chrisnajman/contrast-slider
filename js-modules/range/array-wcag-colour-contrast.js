@@ -1,0 +1,45 @@
+export const wcagColourContrastArray = [
+  {},
+  {
+    ratio: "21",
+    AA: "pass",
+    AALarge: "pass",
+    AAA: "pass",
+    AAALarge: "pass",
+  },
+  {
+    ratio: "13.0",
+    AA: "pass",
+    AALarge: "pass",
+    AAA: "pass",
+    AAALarge: "pass",
+  },
+  {
+    ratio: "7.37",
+    AA: "pass",
+    AALarge: "pass",
+    AAA: "pass",
+    AAALarge: "pass",
+  },
+  {
+    ratio: "5.74",
+    AA: "pass",
+    AALarge: "pass",
+    AAA: "fail",
+    AAALarge: "pass",
+  },
+  {
+    ratio: "12.6",
+    AA: "pass",
+    AALarge: "pass",
+    AAA: "pass",
+    AAALarge: "pass",
+  },
+  {
+    ratio: "21",
+    AA: "pass",
+    AALarge: "pass",
+    AAA: "pass",
+    AAALarge: "pass",
+  },
+]
