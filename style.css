@@ -13,6 +13,8 @@
     --link-blue: blue;
     --button-bg: #007bff;
     --button-bg-hover: #0056b3;
+    --interactive: #0056b3;
+    --interactive-hover: #007bff;
     --bold: 600;
     --border-radius: 1.25rem;
     --focus-visible: 0.125rem solid orange;
@@ -140,12 +142,15 @@ code {
     text-align: center;
 
     & a {
-        color: var(--link-blue);
+        color: var(--interactive);
         text-underline-offset: 0.5em;
 
         &::after {
-            color: var(--link-blue);
             content: " \27F6";
+        }
+
+        &:hover {
+            color: var(--interactive-hover);
         }
     }
 }
@@ -186,7 +191,7 @@ input[type="range"]::-webkit-slider-thumb {
     appearance: none;
     width: 1.5rem;
     height: 1.5rem;
-    background-color: var(--button-bg);
+    background-color: var(--interactive);
     border-radius: 50%;
     border: 0.125rem solid white;
     box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
@@ -194,7 +199,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 input[type="range"]::-webkit-slider-thumb:hover {
-    background-color: var(--button-bg-hover);
+    background-color: var(--interactive-hover);
 }
 
 /* Active (when clicked/dragged) */
@@ -211,7 +216,7 @@ input[type="range"]:focus-visible::-webkit-slider-thumb {
 input[type="range"]::-moz-range-thumb {
     width: 1.5rem;
     height: 1.5rem;
-    background-color: var(--button-bg);
+    background-color: var(--interactive);
     border-radius: 50%;
     border: 0.125rem solid white;
     cursor: grab;
@@ -219,7 +224,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 input[type="range"]::-moz-range-thumb:hover {
-    background-color: var(--button-bg-hover);
+    background-color: var(--interactive-hover);
 }
 
 input[type="range"]::-moz-range-thumb:active {
@@ -320,10 +325,15 @@ input[type="range"]::-moz-range-thumb:active {
 /** Skip link */
 .skip-link {
     background-color: var(--body-bg);
-    color: var(--body-fg);
+    color: var(--interactive);
     font-weight: var(--bold);
     padding: 0.3125rem 0.625rem;
     margin-inline-end: 0.625rem;
+    margin-block-start: 0;
+
+    &:hover {
+        color: var(--interactive-hover);
+    }
 }
 .element-invisible {
     clip: rect(0.0625rem, 0.0625rem, 0.0625rem, 0.0625rem);
