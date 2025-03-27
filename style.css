@@ -306,7 +306,7 @@ input[type="range"]::-moz-range-thumb:active {
         width: 6.25rem;
         height: 6.25rem;
         border: 1.25rem solid var(--body-fg);
-        border-top-color: var(--el-bg);
+        border-top-color: #ccc;
         border-radius: 50%;
         animation: loading 0.75s ease infinite;
     }
