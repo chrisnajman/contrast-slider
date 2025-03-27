@@ -33,7 +33,6 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     line-height: 1.5;
-    margin-block-start: -1.25rem; /* counteracts margin block start on theme switcher */
 }
 
 .h1 {
@@ -55,6 +54,7 @@ body {
 
 p {
     max-width: 60ch;
+    text-wrap: pretty;
 }
 
 .h1,
@@ -63,9 +63,6 @@ h2,
 h3 {
     text-wrap: balance;
     line-height: 1.1;
-}
-p {
-    text-wrap: pretty;
 }
 
 h1,
